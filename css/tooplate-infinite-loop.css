@@ -335,6 +335,7 @@ blockquote {
 
 .tm-gallery-item {
   margin: 0 15px;
+  width: 100%;
 }
 
 .slick-dots {
@@ -453,10 +454,12 @@ figure.effect-honey img {
   opacity: 1;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
+  width: 100%;
 }
 
 figure.effect-honey:hover img {
   opacity: 0.4;
+  width: 100%;
 }
 
 figure.effect-honey figcaption::before {
@@ -695,5 +698,6 @@ p {
 
   .tm-gallery-item {
     margin: 0;
+    width: 100%;
   }
 }
