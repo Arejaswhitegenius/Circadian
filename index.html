@@ -13,6 +13,34 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {color: #000080;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropbtn {background-color: #cccccc;}
+        </style>
 	
   </head>
   <body>    
@@ -28,6 +56,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars navbar-toggler-icon"></i>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -42,11 +71,19 @@
           <li class="nav-item">
             <a class="nav-link tm-nav-link" href="#testimonials">Faculty</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#gallery">Media</a>
+          <li class="dropdown">
+            <button class="collapse navbar-collapse">Media</button>
+            <div class="dropdown-content">
+              <a href="#you">Youtube</a>
+              <a href="#newsletter">Circadian</a>
+              <a href="#events1">Podcast</a>
+              <a href="#events2">Student Body</a>
+              <a href="#insta">Instagram</a>
+            </div>
+          </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link tm-nav-link" href="#insta">Instagram</a>
+              <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
           </li>                
         </ul>
       </div>        
@@ -80,7 +117,7 @@
           	<figure class="tm-testimonial-item">
               <img src="img/1.png" alt="Image" class="img-fluid mx-auto">
             </figure>
-          <p>In this program, you will disambiguate and uncover all the concepts of machine learning and understand each aspect of it, perfectly in the hands-on sessions with the speakers.
+          <p style="font-size: larger;">In this program, you will disambiguate and uncover all the concepts of machine learning and understand each aspect of it, perfectly in the hands-on sessions with the speakers.
           </p>
 			<ul>
 				<li>Program Duration: May 17th to May 21st 2021</li>
@@ -175,10 +212,12 @@
   </div>
   <div class="tm-bg-overlay"></div>
 </section>
+<section id="you">
 <p id="gallery" style="text-align: center; padding-top: 50px;"> 
     <iframe style="padding: 10px;" width="560" height="315" src="https://www.youtube.com/embed/SZeKBVi9UcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe style="padding: 10px;" width="560" height="315" src="https://www.youtube.com/embed/TvuVQe_3p2o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>    
+</section>
       <div class="text-center col-12">
 <section id="newsletter" class="tm-section-pad-top">
     <div class="row">
@@ -189,7 +228,7 @@
       </div>            
     </div>
 </section>
-<section id="events" class="tm-section-pad-top">
+<section id="events1" class="tm-section-pad-top">
 	<div class="container">
         <div class="tm-intro-text-container"></div>
             <h2 class="tm-text-primary mb-4 tm-section-title" style="text-align: left">Tune into "TALKING" by Arun and Sadanand</h2>
@@ -201,7 +240,7 @@
 		</div>
 	</div>      
 </section>
-<section id="events" class="tm-section-pad-top">
+<section id="events2" class="tm-section-pad-top">
 	<div class="container">
         <div class="tm-intro-text-container"></div>
             <h2 class="tm-text-primary mb-4 tm-section-title" style="text-align: left">Student Body For Brainium</h2>
@@ -276,7 +315,7 @@
 <section id="insta">
 <h2 class="tm-text-primary mb-4 tm-section-title">The Brainium Instagram page</h2>
 <!-- Place <div> tag where you want the feed to appear -->
-  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a></div>
   <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
   <script type="text/javascript">
   /* curator-feed-default-feed-layout */
