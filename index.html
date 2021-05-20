@@ -59,7 +59,12 @@
 		  height: 100%;
 		  border: none;
 		}
-
+      .container_iframe {
+      position: relative;
+      height: 70%;
+      overflow: hidden;
+      padding-top: 50%; /* 4:3 Aspect Ratio */
+    }
         </style>
 	
   </head>
@@ -164,10 +169,12 @@
 		<a href="./img/Brainium Expert Talk Poster[E-mail].png" target="_blank"><button class="btn-1">Learn More</button></a>
                 <a href="https://forms.gle/4hmM55M2uRMPB5mt9" target="_blank"><button class="btn-1">Register</button></a>		
 		</div>
-		<br><br>
-		<center id="BET1">
-			<iframe width="720" height="415" src="https://www.youtube.com/embed/2xNtKr2Jzso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</center>
+    <br><br>
+    <div class="container_iframe" id="BET1"> 
+    <center> 
+      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/2xNtKr2Jzso"></iframe>
+    </center>
+    </div>
 	</div>      
 </section>
 
